@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C8B5A8D0BF8293417FE7E358EABA3ADB0215617E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "fad5fc66-066b-4d3e-88e6-8c8e37570a90++8317" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C8B5A8D0BF8293417FE7E358EABA3ADB0215617E" : 0,
+    "fad5fc66-066b-4d3e-88e6-8c8e37570a90++8317" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "91E0AEF5-4A69-4337-8650-AE6133DF12A9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C8B5A8D0BF8293417FE7E358EABA3ADB0215617E" : "simplecalc\/",
+    "fad5fc66-066b-4d3e-88e6-8c8e37570a90++8317" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "simplecalc",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "simplecalc\/simplecalc.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/maciekpe\/simplecalc.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C8B5A8D0BF8293417FE7E358EABA3ADB0215617E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/chinczyk.pd\/repos\/pd",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "fad5fc66-066b-4d3e-88e6-8c8e37570a90++8317"
+    }
+  ]
+}

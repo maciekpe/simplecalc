@@ -12,9 +12,9 @@
 		3A046C061C598204000EEEE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A046C051C598204000EEEE7 /* ViewController.m */; };
 		3A046C091C598204000EEEE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A046C071C598204000EEEE7 /* Main.storyboard */; };
 		3A046C0B1C598204000EEEE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A046C0A1C598204000EEEE7 /* Assets.xcassets */; };
-		3A046C0E1C598204000EEEE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A046C0C1C598204000EEEE7 /* LaunchScreen.storyboard */; };
 		3A046C191C598204000EEEE7 /* simplecalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A046C181C598204000EEEE7 /* simplecalcTests.m */; };
 		3A046C241C598204000EEEE7 /* simplecalcUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A046C231C598204000EEEE7 /* simplecalcUITests.m */; };
+		FD973FED1C5BCC51003B6568 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD973FEC1C5BCC51003B6568 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 		3A046C051C598204000EEEE7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3A046C081C598204000EEEE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A046C0A1C598204000EEEE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3A046C0D1C598204000EEEE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A046C0F1C598204000EEEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A046C141C598204000EEEE7 /* simplecalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simplecalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A046C181C598204000EEEE7 /* simplecalcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = simplecalcTests.m; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		3A046C1F1C598204000EEEE7 /* simplecalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simplecalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A046C231C598204000EEEE7 /* simplecalcUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = simplecalcUITests.m; sourceTree = "<group>"; };
 		3A046C251C598204000EEEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD973FEC1C5BCC51003B6568 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +107,9 @@
 				3A046C051C598204000EEEE7 /* ViewController.m */,
 				3A046C071C598204000EEEE7 /* Main.storyboard */,
 				3A046C0A1C598204000EEEE7 /* Assets.xcassets */,
-				3A046C0C1C598204000EEEE7 /* LaunchScreen.storyboard */,
 				3A046C0F1C598204000EEEE7 /* Info.plist */,
 				3A046BFE1C598204000EEEE7 /* Supporting Files */,
+				FD973FEC1C5BCC51003B6568 /* Launch Screen.storyboard */,
 			);
 			path = simplecalc;
 			sourceTree = "<group>";
@@ -246,7 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A046C0E1C598204000EEEE7 /* LaunchScreen.storyboard in Resources */,
+				FD973FED1C5BCC51003B6568 /* Launch Screen.storyboard in Resources */,
 				3A046C0B1C598204000EEEE7 /* Assets.xcassets in Resources */,
 				3A046C091C598204000EEEE7 /* Main.storyboard in Resources */,
 			);
@@ -317,14 +317,6 @@
 				3A046C081C598204000EEEE7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3A046C0C1C598204000EEEE7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A046C0D1C598204000EEEE7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
