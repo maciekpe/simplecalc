@@ -6,8 +6,7 @@
     self = [super init];
     if (self) {
         _resultValue = [NSDecimalNumber zero];
-        _tempOperation = NONE;
-        _tempValue = [NSDecimalNumber zero];
+        _currentOperation = NONE;
     }
     return self;
 }

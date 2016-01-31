@@ -53,7 +53,7 @@
 		3AF44C981C5E0E3A00FF21EE /* CalculationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationService.m; sourceTree = "<group>"; };
 		3AF44C9A1C5E0E6D00FF21EE /* CalculationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculationService.h; sourceTree = "<group>"; };
 		3AF44C9B1C5E587000FF21EE /* CalculationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationData.m; sourceTree = "<group>"; };
-		3AF44C9D1C5E588800FF21EE /* CalculationData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CalculationData.h; path = ../CalculationData.h; sourceTree = "<group>"; };
+		3AF44C9D1C5E588800FF21EE /* CalculationData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CalculationData.h; path = simplecalc/CalculationData.h; sourceTree = SOURCE_ROOT; };
 		3AF44C9E1C5E84F500FF21EE /* CalculationServiceUT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationServiceUT.m; sourceTree = "<group>"; };
 		3AF44CA01C5E8B2200FF21EE /* CalculationServiceUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationServiceUI.m; sourceTree = "<group>"; };
 		FD973FEC1C5BCC51003B6568 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };

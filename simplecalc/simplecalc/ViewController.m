@@ -35,7 +35,7 @@
     _calculationData = [[CalculationData alloc] init];
     _skipValue = NO;
     _skipOperation = NO;
-    [self updateResultFromBuilder];
+    [self updateResultLabelFromCalculationData];
     
 }
 
@@ -108,14 +108,14 @@
 - (void) handleOperation:(enum OperationType) operation {
     if(!self.skipOperation){
         NSDecimalNumber *value = [self getNumberFromResultLabel];
-        if(self.calculationData.tempOperation != NONE){
+        if(self.calculationData.currentOperation != NONE){
             [self calculate:value];
-            [self updateResultFromBuilder];
+            [self updateResultLabelFromCalculationData];
         }else{
             [self.calculationData setResultValue:value];
         }
     }
-    [self.calculationData setTempOperation: operation];
+    [self.calculationData setCurrentOperation: operation];
 }
 
 - (void) handleFlagsAfterOperation {
@@ -132,13 +132,13 @@
 - (IBAction)calculateTappedAct:(id)sender {
     NSDecimalNumber *value = [self getNumberFromResultLabel];
     [self calculate:value];
-    [self updateResultFromBuilder];
+    [self updateResultLabelFromCalculationData];
 }
 
 - (void) calculate:(NSDecimalNumber*) newValue {
-    NSDecimalNumber *result = [self.service perfomOperation:self.calculationData.tempOperation with:self.calculationData.resultValue and:newValue];
+    NSDecimalNumber *result = [self.service perfomOperation:self.calculationData.currentOperation with:self.calculationData.resultValue and:newValue];
     [self.calculationData setResultValue: result];
-    [self.calculationData setTempOperation: NONE];
+    [self.calculationData setCurrentOperation: NONE];
 }
 
 - (void) handleDigit:(id)sender {
@@ -168,7 +168,7 @@
     }
 }
 
-- (void) updateResultFromBuilder {
+- (void) updateResultLabelFromCalculationData {
     [self.resultLabel setText:[NSString stringWithFormat:@"%@", [self.calculationData resultValue]]];
 }
 
