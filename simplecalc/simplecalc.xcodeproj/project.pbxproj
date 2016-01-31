@@ -14,6 +14,8 @@
 		3A046C0B1C598204000EEEE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A046C0A1C598204000EEEE7 /* Assets.xcassets */; };
 		3A046C191C598204000EEEE7 /* simplecalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A046C181C598204000EEEE7 /* simplecalcTests.m */; };
 		3A046C241C598204000EEEE7 /* simplecalcUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A046C231C598204000EEEE7 /* simplecalcUITests.m */; };
+		3AF44C991C5E0E3A00FF21EE /* CalculationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF44C981C5E0E3A00FF21EE /* CalculationService.m */; };
+		3AF44C9C1C5E587000FF21EE /* CalculationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF44C9B1C5E587000FF21EE /* CalculationData.m */; };
 		FD973FED1C5BCC51003B6568 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD973FEC1C5BCC51003B6568 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,10 @@
 		3A046C1F1C598204000EEEE7 /* simplecalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simplecalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A046C231C598204000EEEE7 /* simplecalcUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = simplecalcUITests.m; sourceTree = "<group>"; };
 		3A046C251C598204000EEEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AF44C981C5E0E3A00FF21EE /* CalculationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationService.m; sourceTree = "<group>"; };
+		3AF44C9A1C5E0E6D00FF21EE /* CalculationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculationService.h; sourceTree = "<group>"; };
+		3AF44C9B1C5E587000FF21EE /* CalculationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationData.m; sourceTree = "<group>"; };
+		3AF44C9D1C5E588800FF21EE /* CalculationData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CalculationData.h; path = ../CalculationData.h; sourceTree = "<group>"; };
 		FD973FEC1C5BCC51003B6568 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +107,7 @@
 		3A046BFD1C598204000EEEE7 /* simplecalc */ = {
 			isa = PBXGroup;
 			children = (
+				3AF44C9D1C5E588800FF21EE /* CalculationData.h */,
 				3A046C011C598204000EEEE7 /* AppDelegate.h */,
 				3A046C021C598204000EEEE7 /* AppDelegate.m */,
 				3A046C041C598204000EEEE7 /* ViewController.h */,
@@ -110,6 +117,9 @@
 				3A046C0F1C598204000EEEE7 /* Info.plist */,
 				3A046BFE1C598204000EEEE7 /* Supporting Files */,
 				FD973FEC1C5BCC51003B6568 /* Launch Screen.storyboard */,
+				3AF44C981C5E0E3A00FF21EE /* CalculationService.m */,
+				3AF44C9A1C5E0E6D00FF21EE /* CalculationService.h */,
+				3AF44C9B1C5E587000FF21EE /* CalculationData.m */,
 			);
 			path = simplecalc;
 			sourceTree = "<group>";
@@ -273,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF44C9C1C5E587000FF21EE /* CalculationData.m in Sources */,
 				3A046C061C598204000EEEE7 /* ViewController.m in Sources */,
+				3AF44C991C5E0E3A00FF21EE /* CalculationService.m in Sources */,
 				3A046C031C598204000EEEE7 /* AppDelegate.m in Sources */,
 				3A046C001C598204000EEEE7 /* main.m in Sources */,
 			);

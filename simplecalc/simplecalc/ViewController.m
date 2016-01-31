@@ -7,10 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "CalculationService.h"
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UIButton *resultLabel;
+@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 @property (weak, nonatomic) IBOutlet UIButton *acBtn;
 @property (weak, nonatomic) IBOutlet UIButton *plusMinusBtn;
 @property (weak, nonatomic) IBOutlet UIButton *percentageBtn;
@@ -38,57 +39,145 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _service = [CalculationService getInstance];
+    _calculationData = [[CalculationData alloc] init];
+    _skipValue = NO;
+    _skipOperation = NO;
+    [self updateResultFromBuilder];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)oneTappedAct:(id)sender {
+    [self handleDigit: sender];
 }
 
 - (IBAction)twoTappedAct:(id)sender {
+    [self handleDigit: sender];
 }
 
 - (IBAction)threeTappedAct:(id)sender {
+    [self handleDigit: sender];
 }
 
 - (IBAction)fourTappedAct:(id)sender {
+    [self handleDigit: sender];
 }
 
 - (IBAction)fiveTappedAct:(id)sender {
+    [self handleDigit: sender];
 }
 
 - (IBAction)sixTappedAct:(id)sender {
+    [self handleDigit: sender];
 }
 
 - (IBAction)sevenTappedAct:(id)sender {
+    [self handleDigit: sender];
 }
 
 - (IBAction)eightTappedAct:(id)sender {
+    [self handleDigit: sender];
 }
 
 - (IBAction)nineTappedAct:(id)sender {
+    [self handleDigit: sender];
 }
 
 - (IBAction)zeroTappedAct:(id)sender {
+    [self handleDigit: sender];
 }
 
+
 - (IBAction)divTappedAct:(id)sender {
+    [self handleOperation: DIV];
+    [self handleFlagsAfterOperation];
 }
 
 - (IBAction)multiTappedAct:(id)sender {
+    [self handleOperation: MULTI];
+    [self handleFlagsAfterOperation];
 }
 
 - (IBAction)plusTappedAct:(id)sender {
+    [self handleOperation: ADD];
+    [self handleFlagsAfterOperation];
 }
+
 
 - (IBAction)minusTappedAct:(id)sender {
+    [self handleOperation: SUB];
+    [self handleFlagsAfterOperation];
 }
 
+- (void) handleOperation:(enum OperationType) operation {
+    if(!self.skipOperation){
+        NSDecimalNumber *value = [self getNumberFromResultLabel];
+        if(self.calculationData.tempOperation != NONE){
+            [self calculate:value];
+            [self updateResultFromBuilder];
+        }else{
+            [self.calculationData setResultValue:value];
+        }
+    }
+    [self.calculationData setTempOperation: operation];
+}
+
+- (void) handleFlagsAfterOperation {
+    [self setSkipValue: YES];
+    [self setSkipOperation: YES];
+}
+
+- (NSDecimalNumber*) getNumberFromResultLabel {
+    NSString *valueText = [self.resultLabel text];
+    return [NSDecimalNumber decimalNumberWithString:valueText];
+}
+
+
 - (IBAction)calculateTappedAct:(id)sender {
+    NSDecimalNumber *value = [self getNumberFromResultLabel];
+    [self calculate:value];
+    [self updateResultFromBuilder];
+}
+
+- (void) calculate:(NSDecimalNumber*) newValue {
+    NSDecimalNumber *result = [self.service perfomOperation:self.calculationData.tempOperation with:self.calculationData.resultValue and:newValue];
+    [self.calculationData setResultValue: result];
+    [self.calculationData setTempOperation: NONE];
+}
+
+- (void) handleDigit:(id)sender {
+    UIButton *resultButton = (UIButton*) sender;
+    [self handleLabelText: resultButton.currentTitle];
+    [self handleFlagsAfterDigit];
+}
+
+- (void) handleLabelText: (NSString*) valuebutton{
+    NSString *valueLabel = [self.resultLabel text];
+    if(self.skipValue){
+        valueLabel = @"";
+    }
+    valueLabel = [valueLabel stringByAppendingString:valuebutton];
+    if ([valueLabel hasPrefix:@"0"] && [valueLabel length] > 1) {
+        valueLabel = [valueLabel substringFromIndex:1];
+    }
+    [self.resultLabel setText: valueLabel];
+}
+
+- (void) handleFlagsAfterDigit {
+    if(self.skipValue){
+        [self setSkipValue : NO];
+    }
+    if(self.skipOperation){
+        [self setSkipOperation: NO];
+    }
+}
+
+- (void) updateResultFromBuilder {
+    [self.resultLabel setText:[NSString stringWithFormat:@"%@", [self.calculationData resultValue]]];
 }
 
 
