@@ -13,6 +13,9 @@
 }
 
 - (NSDecimalNumber*) perfomOperation:(enum OperationType) operation with: (NSDecimalNumber*) valueOne and: (NSDecimalNumber*) valueTwo {
+    if(valueOne == nil || valueOne == nil){
+        return [NSDecimalNumber zero];
+    }
     NSDecimalNumber *result = nil;
     switch(operation){
         case ADD:
@@ -38,6 +41,9 @@
 }
 
 - (NSDecimalNumber*) div: (NSDecimalNumber*) valueOne and: (NSDecimalNumber*) valueTwo {
+    if([valueTwo isEqualToValue:[NSDecimalNumber zero]]){
+        return [NSDecimalNumber zero];
+    }
     return [valueOne decimalNumberByDividingBy: valueTwo];
 }
 

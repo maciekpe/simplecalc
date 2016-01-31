@@ -12,10 +12,10 @@
 		3A046C061C598204000EEEE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A046C051C598204000EEEE7 /* ViewController.m */; };
 		3A046C091C598204000EEEE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A046C071C598204000EEEE7 /* Main.storyboard */; };
 		3A046C0B1C598204000EEEE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A046C0A1C598204000EEEE7 /* Assets.xcassets */; };
-		3A046C191C598204000EEEE7 /* simplecalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A046C181C598204000EEEE7 /* simplecalcTests.m */; };
-		3A046C241C598204000EEEE7 /* simplecalcUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A046C231C598204000EEEE7 /* simplecalcUITests.m */; };
 		3AF44C991C5E0E3A00FF21EE /* CalculationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF44C981C5E0E3A00FF21EE /* CalculationService.m */; };
 		3AF44C9C1C5E587000FF21EE /* CalculationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF44C9B1C5E587000FF21EE /* CalculationData.m */; };
+		3AF44C9F1C5E84F500FF21EE /* CalculationServiceUT.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF44C9E1C5E84F500FF21EE /* CalculationServiceUT.m */; };
+		3AF44CA11C5E8B2200FF21EE /* CalculationServiceUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF44CA01C5E8B2200FF21EE /* CalculationServiceUI.m */; };
 		FD973FED1C5BCC51003B6568 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD973FEC1C5BCC51003B6568 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -47,15 +47,15 @@
 		3A046C0A1C598204000EEEE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A046C0F1C598204000EEEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A046C141C598204000EEEE7 /* simplecalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simplecalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A046C181C598204000EEEE7 /* simplecalcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = simplecalcTests.m; sourceTree = "<group>"; };
 		3A046C1A1C598204000EEEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A046C1F1C598204000EEEE7 /* simplecalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simplecalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A046C231C598204000EEEE7 /* simplecalcUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = simplecalcUITests.m; sourceTree = "<group>"; };
 		3A046C251C598204000EEEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AF44C981C5E0E3A00FF21EE /* CalculationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationService.m; sourceTree = "<group>"; };
 		3AF44C9A1C5E0E6D00FF21EE /* CalculationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculationService.h; sourceTree = "<group>"; };
 		3AF44C9B1C5E587000FF21EE /* CalculationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationData.m; sourceTree = "<group>"; };
 		3AF44C9D1C5E588800FF21EE /* CalculationData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CalculationData.h; path = ../CalculationData.h; sourceTree = "<group>"; };
+		3AF44C9E1C5E84F500FF21EE /* CalculationServiceUT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationServiceUT.m; sourceTree = "<group>"; };
+		3AF44CA01C5E8B2200FF21EE /* CalculationServiceUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationServiceUI.m; sourceTree = "<group>"; };
 		FD973FEC1C5BCC51003B6568 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,7 +135,7 @@
 		3A046C171C598204000EEEE7 /* simplecalcTests */ = {
 			isa = PBXGroup;
 			children = (
-				3A046C181C598204000EEEE7 /* simplecalcTests.m */,
+				3AF44C9E1C5E84F500FF21EE /* CalculationServiceUT.m */,
 				3A046C1A1C598204000EEEE7 /* Info.plist */,
 			);
 			path = simplecalcTests;
@@ -144,8 +144,8 @@
 		3A046C221C598204000EEEE7 /* simplecalcUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3A046C231C598204000EEEE7 /* simplecalcUITests.m */,
 				3A046C251C598204000EEEE7 /* Info.plist */,
+				3AF44CA01C5E8B2200FF21EE /* CalculationServiceUI.m */,
 			);
 			path = simplecalcUITests;
 			sourceTree = "<group>";
@@ -295,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A046C191C598204000EEEE7 /* simplecalcTests.m in Sources */,
+				3AF44C9F1C5E84F500FF21EE /* CalculationServiceUT.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A046C241C598204000EEEE7 /* simplecalcUITests.m in Sources */,
+				3AF44CA11C5E8B2200FF21EE /* CalculationServiceUI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

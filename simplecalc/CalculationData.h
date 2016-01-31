@@ -1,5 +1,4 @@
 #import <Foundation/Foundation.h>
-#import <MapKit/MapKit.h>
 
 @interface CalculationData : NSObject
 
