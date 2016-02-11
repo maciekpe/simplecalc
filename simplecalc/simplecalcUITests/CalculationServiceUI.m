@@ -35,7 +35,7 @@
 - (void)testMulti {
     XCUIApplication *app = [[XCUIApplication alloc] init];
     [app launch];
-    sleep(3);
+    sleep(1);
     XCUIElement *button = app.buttons[@"7"];
     [button tap];
     [app.buttons[@"*"] tap];
@@ -46,10 +46,10 @@
 }
 
 - (void)testAdd {
-    
+    sleep(1);
     XCUIApplication *app = [[XCUIApplication alloc] init];
     [app launch];
-    sleep(3);
+    sleep(1);
     [app.buttons[@"9"] tap];
     [app.buttons[@"+"] tap];
     [app.buttons[@"6"] tap];
@@ -65,7 +65,7 @@
     
     XCUIApplication *app = [[XCUIApplication alloc] init];
     [app launch];
-    sleep(3);
+    sleep(1);
     XCUIElement *button = app.buttons[@"9"];
     [button tap];
     [button tap];
@@ -84,7 +84,7 @@
     
     XCUIApplication *app = [[XCUIApplication alloc] init];
     [app launch];
-    sleep(3);
+    sleep(1);
     XCUIElement *button = app.buttons[@"3"];
     [button tap];
     [button tap];
