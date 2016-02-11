@@ -22,7 +22,7 @@
     // In UI tests it is usually best to stop immediately when a failure occurs.
     self.continueAfterFailure = NO;
     // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-    [[[XCUIApplication alloc] init] launch];
+    //[[[XCUIApplication alloc] init] launch];
 
     // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
 }
@@ -34,22 +34,27 @@
 
 - (void)testMulti {
     XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app launch];
     XCUIElement *button = app.buttons[@"7"];
     [button tap];
     [app.buttons[@"*"] tap];
     [button tap];
     [app.buttons[@"="] tap];
     [app.staticTexts[@"49"] tap];
+    [app terminate];
 }
 
 - (void)testAdd {
     
     XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app launch];
     [app.buttons[@"9"] tap];
     [app.buttons[@"+"] tap];
     [app.buttons[@"6"] tap];
     [app.buttons[@"="] tap];
     [app.staticTexts[@"15"] tap];
+    [app terminate];
+    
     
 }
 
@@ -57,6 +62,7 @@
     
     
     XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app launch];
     XCUIElement *button = app.buttons[@"9"];
     [button tap];
     [button tap];
@@ -66,6 +72,7 @@
     [app.buttons[@"2"] tap];
     [app.buttons[@"="] tap];
     [app.staticTexts[@"87"] tap];
+    [app terminate];
     
     
 }
@@ -73,6 +80,7 @@
 - (void)testDiv {
     
     XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app launch];
     XCUIElement *button = app.buttons[@"3"];
     [button tap];
     [button tap];
@@ -81,6 +89,7 @@
     [button tap];
     [app.buttons[@"="] tap];
     [app.staticTexts[@"11"] tap];
+    [app terminate];
     
 }
 
