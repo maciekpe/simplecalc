@@ -24,13 +24,13 @@
         case SUB:
             result = [self sub: valueOne and: valueTwo];
             break;
+        default:
+            break;
         case MULTI:
             result = [self multi: valueOne and: valueTwo];
             break;
         case DIV:
             result = [self div: valueOne and: valueTwo];
-            break;
-        default:
             break;
     }
     return result;
