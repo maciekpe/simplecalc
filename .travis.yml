@@ -1,0 +1,3 @@
+language: objective-c
+osx_image: xcode7
+script:  time xcodebuild -scheme simplecalcUI -project ./simplecalc/simplecalc.xcodeproj clean build -destination "platform=iOS Simulator,name=iPhone 6" test
