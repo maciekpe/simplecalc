@@ -12,6 +12,8 @@
 		3A046C061C598204000EEEE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A046C051C598204000EEEE7 /* ViewController.m */; };
 		3A046C091C598204000EEEE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A046C071C598204000EEEE7 /* Main.storyboard */; };
 		3A046C0B1C598204000EEEE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A046C0A1C598204000EEEE7 /* Assets.xcassets */; };
+		3AEEBD9B1C7D2CE900C00044 /* CalculationService.h in Sources */ = {isa = PBXBuildFile; fileRef = 3AF44C9A1C5E0E6D00FF21EE /* CalculationService.h */; };
+		3AEEBD9C1C7D2CE900C00044 /* CalculationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF44C981C5E0E3A00FF21EE /* CalculationService.m */; };
 		3AF44C991C5E0E3A00FF21EE /* CalculationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF44C981C5E0E3A00FF21EE /* CalculationService.m */; };
 		3AF44C9C1C5E587000FF21EE /* CalculationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF44C9B1C5E587000FF21EE /* CalculationData.m */; };
 		3AF44C9F1C5E84F500FF21EE /* CalculationServiceUT.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF44C9E1C5E84F500FF21EE /* CalculationServiceUT.m */; };
@@ -20,13 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3A046C151C598204000EEEE7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3A046BF31C598204000EEEE7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3A046BFA1C598204000EEEE7;
-			remoteInfo = simplecalc;
-		};
 		3A046C201C598204000EEEE7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3A046BF31C598204000EEEE7 /* Project object */;
@@ -50,6 +45,8 @@
 		3A046C1A1C598204000EEEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A046C1F1C598204000EEEE7 /* simplecalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simplecalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A046C251C598204000EEEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AEEBD911C7D20B600C00044 /* unitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unitTests.m; sourceTree = "<group>"; };
+		3AEEBD931C7D20B600C00044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AF44C981C5E0E3A00FF21EE /* CalculationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationService.m; sourceTree = "<group>"; };
 		3AF44C9A1C5E0E6D00FF21EE /* CalculationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculationService.h; sourceTree = "<group>"; };
 		3AF44C9B1C5E587000FF21EE /* CalculationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationData.m; sourceTree = "<group>"; };
@@ -90,6 +87,7 @@
 				3A046BFD1C598204000EEEE7 /* simplecalc */,
 				3A046C171C598204000EEEE7 /* simplecalcTests */,
 				3A046C221C598204000EEEE7 /* simplecalcUITests */,
+				3AEEBD901C7D20B600C00044 /* unitTests */,
 				3A046BFC1C598204000EEEE7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -150,6 +148,15 @@
 			path = simplecalcUITests;
 			sourceTree = "<group>";
 		};
+		3AEEBD901C7D20B600C00044 /* unitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AEEBD911C7D20B600C00044 /* unitTests.m */,
+				3AEEBD931C7D20B600C00044 /* Info.plist */,
+			);
+			path = unitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,7 +188,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3A046C161C598204000EEEE7 /* PBXTargetDependency */,
 			);
 			name = simplecalcTests;
 			productName = simplecalcTests;
@@ -212,6 +218,9 @@
 		3A046BF31C598204000EEEE7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = mpe;
 				TargetAttributes = {
@@ -222,7 +231,6 @@
 					3A046C131C598204000EEEE7 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 5SL4ZE7KUS;
-						TestTargetID = 3A046BFA1C598204000EEEE7;
 					};
 					3A046C1E1C598204000EEEE7 = {
 						CreatedOnToolsVersion = 7.2;
@@ -295,6 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AEEBD9B1C7D2CE900C00044 /* CalculationService.h in Sources */,
+				3AEEBD9C1C7D2CE900C00044 /* CalculationService.m in Sources */,
 				3AF44C9F1C5E84F500FF21EE /* CalculationServiceUT.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,11 +320,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3A046C161C598204000EEEE7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3A046BFA1C598204000EEEE7 /* simplecalc */;
-			targetProxy = 3A046C151C598204000EEEE7 /* PBXContainerItemProxy */;
-		};
 		3A046C211C598204000EEEE7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3A046BFA1C598204000EEEE7 /* simplecalc */;
@@ -443,24 +448,20 @@
 		3A046C2C1C598204000EEEE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = simplecalcTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.mpe.simplecalcTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/simplecalc.app/simplecalc";
 			};
 			name = Debug;
 		};
 		3A046C2D1C598204000EEEE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = simplecalcTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.mpe.simplecalcTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/simplecalc.app/simplecalc";
 			};
 			name = Release;
 		};
