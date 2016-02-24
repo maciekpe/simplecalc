@@ -28,7 +28,7 @@
 - (void)testSub {
     CalculationService *service = [CalculationService getInstance];
     NSDecimalNumber *result = [service perfomOperation:SUB with: [NSDecimalNumber decimalNumberWithString:@"10"] and:[NSDecimalNumber decimalNumberWithString:@"7"] ];
-    XCTAssertEqualObjects(result, [NSDecimalNumber decimalNumberWithString:@"3"]);
+    XCTAssertEqualObjects(result, [NSDecimalNumber decimalNumberWithString:@"4"]);
 }
 
 - (void)testMulti {
